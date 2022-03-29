@@ -1,0 +1,204 @@
+@import 'toggleSwitchDark';
+
+main.darkMode {
+    @include styleVH(100vw, 140vh);
+
+    background-color: $background;
+
+    div.dashboard {
+        header.headerD{
+            @include Display(flex, space-between);
+            @include styleVH(100vw, 35vh);
+            
+            background-color: $backgroundTop;   
+
+            padding: 2em 4.6em 0 4.6em;
+
+            z-index: -1;
+            
+            div.title {
+                h1 {
+                    @include FontStyle('', $text2, 700);
+                }
+
+                p {
+                    @include FontStyle('', $text1, 400);
+                }
+            }
+        }
+
+        div.cards {
+            @include Display(flex, space-around);
+
+            padding: 3em;
+
+            div.card {
+                @include styleVH(22%, 40%);
+
+                border-radius: 5px;
+
+                background-color: $card;
+
+                margin-top: -12em;
+
+                header.headerBackColorF {
+                    @include HeaderCard;
+
+                    background-color: $facebook;
+                }
+
+                header.headerBackColorT {
+                    @include HeaderCard;
+
+                    background-color: $twitter;
+                }
+
+                header.headerBackImageI {
+                    @include HeaderCard;
+
+                    background-image: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+                }
+
+                header.headerBackColorY {
+                    @include HeaderCard;
+
+                    background-color: $youtube;
+                }
+
+                div.username {
+                    @include Display(flex, space-around);
+
+                    padding: 1em 5.8em 2em 6.2em;
+
+                    p {
+                        @include FontStyle(0.8rem, $text1, 400);
+                    }
+                }
+
+                div.followers {
+                    text-align: center;
+                    
+                    strong {
+                        @include FontStyle(3rem, $text2, 700);
+                    }
+
+                    p {
+                        @include FontStyle(0.8rem, $text1, 400);
+
+                        opacity: 0.7;
+
+                        letter-spacing: 2px;
+
+                        padding-bottom: 2em;
+                    }
+                }
+
+                div.views {
+                    @include Display(flex, space-around, center);
+
+                    padding: 0 6.4em 2em 6.4em;
+
+                    img {
+                        @include styleVH(6px, 5px);                     
+                    }
+
+                    p.greenC {
+                        @include FontStyle(0.7rem, $color1, 700);
+                    }
+
+                    p.redC {
+                        @include FontStyle(0.7rem, $color2, 700);
+                    }
+                }
+
+                &:hover {
+                    cursor: pointer;
+
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    h2 {
+        @include FontStyle('', $text2, 700);
+
+        margin-left: 3em;
+
+        padding-bottom: 1em;
+    }
+
+    div.overview {
+        display: grid;
+
+        grid-template-areas: 'a1 a2 a3 a4'
+                             'a5 a6 a7 a8';
+
+        gap: 2em;
+
+        padding: 3.5em;
+
+        margin-top: -2em;
+
+        div.card2 {
+            width: 260px;
+
+            background-color: $card;
+
+            border-radius: 5px;
+
+            margin-left: 1em;
+
+            header {
+                @include Display(flex, space-between);
+
+                width: 100%;
+
+                padding: 2em 2em;
+
+                p {
+                    @include FontStyle(0.8rem, $text1, 700)
+                }
+            }
+
+            div.viewsOverview {
+                @include Display(flex, space-between);
+
+                padding: 2em;
+
+                padding-top: 0;
+
+                strong {
+                    @include FontStyle(2rem, $text2, 700);
+                }
+
+                div.numberIcon {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    margin-left: 2em;
+                    margin-top: 1em;
+
+                    img {
+                        @include styleVH(6px, 5px);
+                    }
+
+                    p.greenColor {
+                        @include FontStyle(0.7rem, $color1, 700);
+                    }
+
+                    p.redColor {
+                        @include FontStyle(0.7rem, $color2, 700);
+                    }
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+
+                opacity: 0.7;
+            }
+        }
+    }
+}

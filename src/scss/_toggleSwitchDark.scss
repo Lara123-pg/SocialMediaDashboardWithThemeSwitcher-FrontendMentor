@@ -1,0 +1,50 @@
+label.toggleDark {
+    @include Display(flex, center, center);
+    @include styleVH(4em, 1.5em);
+
+    background-image: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+    border-radius: 1rem;
+
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+
+        opacity: 0.8;
+
+        div.name {
+            @include FontStyle('', $text2, 700);
+        }
+    }
+
+    div.name {
+        @include FontStyle(0.8rem, $text1, 700);
+
+        margin-right: 12em;
+
+        white-space: nowrap;
+    }
+
+    input {
+        @include styleVH(100%, 100%);
+
+        opacity: 0;
+    }
+
+    span {
+        @include styleVH(1rem, 1rem);
+        position: absolute;
+        left: 0.4em;
+
+        border-radius: 1rem;
+
+        background-color: hsl(232, 19%, 15%);
+
+        cursor: pointer;
+    }
+
+    input:checked + span {
+        left: 60%;
+    }
+}

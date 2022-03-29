@@ -1,0 +1,130 @@
+@media (max-width: 1219px) {
+    main.darkMode, main.lightMode {
+        div.dashboard {
+            div.cards {
+                div.card {
+                    div.username {
+                        padding: 1em 4em 2em 4em;
+
+                        white-space: nowrap;
+                    }
+    
+                    div.views {
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    
+        div.overview {
+            div.card2 {
+                width: 90%;    
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 965px) {
+    main.darkMode, main.lightMode {
+        height: 300vh;
+
+        div.overview {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            margin-left: 6em;
+
+            div.card2 {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    main.darkMode, main.lightMode {
+        @include styleVH(768px, 2670px);
+
+        div.dashboard {
+            header.headerD{
+                @include styleVH(768px, 130px);
+
+                display: flex;
+                flex-direction: column;
+
+                div.title {
+                    width: 1000px;
+                    border-bottom: 1px solid hsl(228, 34%, 66%);
+
+                    h1 {
+                        font-size: 1.2rem;
+                        margin-left: 2.4em;
+                    }
+    
+                    p {
+                        padding-bottom: 1em;
+                        margin-left: 3.3em;
+                    }
+                }
+
+                label.toggleDark, label.toggleLight {
+                    margin-left: 25em;
+                    
+                    div.name {
+                        margin-right: 28em;
+                    }
+                }
+            }
+    
+            div.cards {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                gap: 11em;
+
+                margin-top: 8em;
+                margin-left: 11em;
+    
+                div.card {
+                    @include styleVH(55%, 40%);
+    
+                    div.username {
+                        @include Display(flex, space-around);
+    
+                        padding: 1em 5em 2em 5em;
+    
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    div.views {
+                        @include Display(flex, space-around, center);
+    
+                        padding: 0 6em 2em 6em;
+
+                        white-space: nowrap; 
+                    }
+                }
+            }
+        }
+    
+        h2 {    
+            margin-left: 9.2em;
+        }
+    
+        div.overview {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            margin-left: 9em;
+
+            div.card2 {
+                width: 300px;
+            }
+        }
+    }
+}
