@@ -110,7 +110,7 @@ export function SocialMedia() {
                             area = 'a1'
                             title = 'Page Views'
                             icon = {facebook}
-                            description = 'Ícone do Facebook - Descrição: Letra F da cor preta com um background azul para o dark mode e para o light Mode é a Letra F da cor branca com um background azulÍcone do Facebook - Descrição: Letra F da cor preta com um background azul'
+                            description = 'Ícone do Facebook - Descrição: Letra F da cor preta com um background azul para o dark mode e para o light Mode é a Letra F da cor branca com um background azul'
 
                             number = '87'
 
