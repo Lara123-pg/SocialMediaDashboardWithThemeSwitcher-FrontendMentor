@@ -38,7 +38,7 @@ export function SocialMedia() {
                             headerC = 'headerBackColorF'
 
                             image = {facebook}
-                            description = 'Ícone do Facebook - Descrição: Letra F da cor preta com um background azul'
+                            description = 'Ícone do Facebook - Descrição: Letra F da cor preta com um background azul para o dark mode e para o light Mode é a Letra F da cor branca com um background azul'
                             name = '@nathanf'
 
                             number = '1987'
@@ -89,7 +89,7 @@ export function SocialMedia() {
                             headerC = 'headerBackColorY'
 
                             image = {youtube}
-                            description = 'Ícone do YouTube - Descrição: Fundo vermelho que tem um retângulo preto com um ícone branco virado para o lado direito'
+                            description = 'Ícone do YouTube - Descrição: Fundo vermelho que tem um retângulo preto com um ícone vermelho virado para o lado direito para o dark mode e para o light mode é um fundo vermelho que tem um retângulo branco com um ícone vermelho virado para o lado direito'
                             name = 'Nathan F.'
 
                             number = '8239'
@@ -110,7 +110,7 @@ export function SocialMedia() {
                             area = 'a1'
                             title = 'Page Views'
                             icon = {facebook}
-                            description = 'Ícone do Facebook - Descrição: Letra F da cor preta com um background azul'
+                            description = 'Ícone do Facebook - Descrição: Letra F da cor preta com um background azul para o dark mode e para o light Mode é a Letra F da cor branca com um background azulÍcone do Facebook - Descrição: Letra F da cor preta com um background azul'
 
                             number = '87'
 
@@ -124,7 +124,7 @@ export function SocialMedia() {
                             area = 'a2'
                             title = 'Likes'
                             icon = {facebook}
-                            description = 'Ícone do Facebook - Descrição: Letra F da cor preta com um background azul'
+                            description = 'Ícone do Facebook - Descrição: Letra F da cor preta com um background azul para o dark mode e para o light Mode é a Letra F da cor branca com um background azul'
 
                             number = '52'
 
@@ -196,7 +196,7 @@ export function SocialMedia() {
                             area = 'a7'
                             title = 'Likes'
                             icon = {youtube}
-                            description = 'Ícone do YouTube - Descrição: Fundo vermelho que tem um retângulo preto com um ícone branco virado para o lado direito'
+                            description = 'Ícone do YouTube - Descrição: Fundo vermelho que tem um retângulo preto com um ícone vermelho virado para o lado direito para o dark mode e para o light mode é um fundo vermelho que tem um retângulo branco com um ícone vermelho virado para o lado direito'
 
                             number = '107'
 
@@ -211,7 +211,7 @@ export function SocialMedia() {
                             area = 'a8'
                             title = 'Total Views'
                             icon = {youtube}
-                            description = 'Ícone do YouTube - Descrição: Fundo vermelho que tem um retângulo preto com um ícone branco virado para o lado direito'
+                            description = 'Ícone do YouTube - Descrição: Fundo vermelho que tem um retângulo preto com um ícone vermelho virado para o lado direito para o dark mode e para o light mode é um fundo vermelho que tem um retângulo branco com um ícone vermelho virado para o lado direito'
 
                             number = '1407'
 
